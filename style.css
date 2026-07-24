@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     overflow-x: hidden;
 
 }
@@ -18,11 +20,11 @@ input,
 select,
 textarea,
 .interactive-element {
-    
+
     transition: all 0.3s ease-in-out;
     -webkit-tap-highlight-color: transparent;
-    
-    
+
+
 }
 
 
@@ -119,20 +121,20 @@ header {
     font-size: 25px;
     /* background-color: rgb(75, 76, 73);
      */
-     background: #111;
-     color: #fff;
+    background: #111;
+    color: #fff;
     padding: 10px 15px;
     border: 1px solid #BFA46F;
     border-radius: 80px;
     align-items: center;
-    box-shadow:0 6px 20px rgba(191,164,111,.18);
+    box-shadow: 0 6px 20px rgba(191, 164, 111, .18);
 
 
 
 }
 
 .j-button:hover {
-    
+
     background: #efd5ac;
     color: #111;
 }
@@ -157,7 +159,7 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 80px;
     text-transform: uppercase;
-    background :linear-gradient(80deg,rgb(248, 246, 246),rgb(241, 109, 43));
+    background: linear-gradient(80deg, rgb(248, 246, 246), rgb(241, 109, 43));
     background-clip: text;
     color: transparent;
 
@@ -195,17 +197,17 @@ header {
 }
 
 .button :first-child {
-   background: #111;
-     color: #fff;
+    background: #111;
+    color: #fff;
     /* padding: 10px 15px; */
     border: 1px solid #BFA46F;
     border-radius: 80px;
     align-items: center;
-    box-shadow:0 6px 20px rgba(191,164,111,.18);
+    box-shadow: 0 6px 20px rgba(191, 164, 111, .18);
 }
 
 .button :first-child:hover {
-    background:#efd093;
+    background: #efd093;
     color: black;
 
 }
@@ -229,7 +231,7 @@ header {
 }
 
 .stats h2 {
-    background: linear-gradient(90deg,rgb(228, 165, 165),rgb(235, 235, 98));
+    background: linear-gradient(90deg, rgb(228, 165, 165), rgb(235, 235, 98));
     background-clip: text;
     color: transparent;
     font-size: 50px;
@@ -314,21 +316,21 @@ header {
 }
 
 .about-box {
-    background:rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    border:1px solid rbga(255,255,255,0.15);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.35),inset 0 1px 1px rgba(237, 229, 229, 0.08);
+    border: 1px solid rbga(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(237, 229, 229, 0.08);
     color: white;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
     height: 150px;
-    transition:all 0.2s ease;
-    -webkit-transition:all 0.2s ease;
-    -moz-transition:all 0.2s ease;
-    -ms-transition:all 0.2s ease;
-    -o-transition:all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
 }
 
 .about-box h4 {
@@ -367,9 +369,9 @@ header {
 
 .program h1 {
     color: white;
-    background: linear-gradient(90deg,rgb(54, 54, 54),rgb(246, 242, 242),rgb(44, 54, 61));
+    background: linear-gradient(90deg, rgb(54, 54, 54), rgb(246, 242, 242), rgb(44, 54, 61));
     background-clip: text;
-    color:transparent;
+    color: transparent;
     text-transform: uppercase;
     font-size: 65px;
     font-weight: 800;
@@ -443,7 +445,7 @@ span,
 p,
 h1 {
     color: white;
-    
+
 }
 
 .before-after h3 {
@@ -459,9 +461,9 @@ h1 {
     font-size: 60px;
     font-weight: 800;
     margin-top: 20px;
-    background: linear-gradient(90deg,rgb(54, 54, 54),rgb(246, 242, 242),rgb(44, 54, 61));
+    background: linear-gradient(90deg, rgb(54, 54, 54), rgb(246, 242, 242), rgb(44, 54, 61));
     background-clip: text;
-    color:transparent;
+    color: transparent;
 
 }
 
@@ -483,15 +485,15 @@ h1 {
 
 .beforeafterimg {
     height: 420px;
-    width:400px;
+    width: 400px;
     border-radius: 30px;
-    
+
 }
 
 .beforeafterimg img {
     width: 100%;
     height: 420px;
-    object-fit:fill;
+    object-fit: fill;
     border-radius: 30px;
 }
 
@@ -511,9 +513,9 @@ h1 {
 
 .between h1 {
     color: red;
-    background: linear-gradient(90deg,rgb(234, 143, 143),rgb(200, 46, 46),rgb(208, 191, 183));
+    background: linear-gradient(90deg, rgb(234, 143, 143), rgb(200, 46, 46), rgb(208, 191, 183));
     background-clip: text;
-    color:transparent;
+    color: transparent;
 
 }
 
@@ -530,10 +532,10 @@ h1 {
     margin-top: 10px;
     background-color: rgb(230, 218, 179);
     padding: 5px;
-    background: linear-gradient(90deg,rgb(180, 175, 32),rgb(244, 243, 243),rgb(236, 239, 242));
+    background: linear-gradient(90deg, rgb(180, 175, 32), rgb(244, 243, 243), rgb(236, 239, 242));
     background-clip: text;
-    color:transparent;
-   
+    color: transparent;
+
     border-radius: 25px;
 }
 
@@ -548,9 +550,9 @@ h1 {
 
 .plan h3 {
     color: red;
-    background: linear-gradient(90deg,rgb(220, 220, 38));
+    background: linear-gradient(90deg, rgb(220, 220, 38));
     background-clip: text;
-    color:transparent;
+    color: transparent;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -639,12 +641,12 @@ h1 {
     text-decoration: none;
     font-size: 25px;
     background: #111;
-     color: #fff;
+    color: #fff;
     padding: 10px 15px;
     border: 1px solid #BFA46F;
     border-radius: 80px;
     align-items: center;
-    box-shadow:0 6px 20px rgba(191,164,111,.18);
+    box-shadow: 0 6px 20px rgba(191, 164, 111, .18);
     padding: 20px;
     border-radius: 80px;
     align-items: center;
@@ -728,13 +730,13 @@ input {
     width: 80%;
     height: 50px;
     padding: 10px;
-     background: #111;
-     color: #fff;
+    background: #111;
+    color: #fff;
     padding: 10px 15px;
     border: 1px solid #f6f3ef;
     border-radius: 80px;
     align-items: center;
-    box-shadow:0 6px 20px rgba(191,164,111,.18);
+    box-shadow: 0 6px 20px rgba(191, 164, 111, .18);
     border-radius: 10px;
     font-size: 20px;
     text-transform: uppercase;
@@ -752,7 +754,7 @@ input {
 }
 
 .fform h2 {
-   
+
     color: rgb(244, 226, 200);
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -761,9 +763,9 @@ input {
 
 /* TESTIMONAls section  */
 .reviews h3 {
-   background: linear-gradient(90deg ,rgb(199, 191, 154),rgb(241, 177, 113));
-   background-clip: text;
-   color: transparent;
+    background: linear-gradient(90deg, rgb(199, 191, 154), rgb(241, 177, 113));
+    background-clip: text;
+    color: transparent;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -884,9 +886,9 @@ input {
     font-size: 60px;
     font-weight: 800;
     margin-top: 20px;
-    background: linear-gradient(90deg,rgb(233, 227, 227),rgb(63, 114, 66),rgb(238, 240, 242));
+    background: linear-gradient(90deg, rgb(233, 227, 227), rgb(63, 114, 66), rgb(238, 240, 242));
     background-clip: text;
-    color:transparent;
+    color: transparent;
 
 
 }
@@ -916,10 +918,10 @@ input {
 
 .contact-info h3 {
     font-size: 30px;
-     background: linear-gradient(90deg, red, white);
+    background: linear-gradient(90deg, red, white);
     background-clip: text;
     color: transparent;
-    
+
     padding-bottom: 20px;
 }
 
@@ -956,12 +958,12 @@ input {
     height: 50px;
     border-radius: 30px;
     background: #111;
-     color: #fff;
+    color: #fff;
     padding: 10px 15px;
     border: 1px solid #BFA46F;
     border-radius: 80px;
     align-items: center;
-    box-shadow:0 6px 20px rgba(191,164,111,.18);
+    box-shadow: 0 6px 20px rgba(191, 164, 111, .18);
     color: white;
     font-weight: 3000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -1022,7 +1024,7 @@ footer h2 {
 =========================== */
 
 @media (max-width:768px) {
-  
+
     .menu-toggle {
         display: block;
     }
@@ -1056,220 +1058,312 @@ footer h2 {
         list-style: none;
         transition: 0.5s;
 
-}
-    .nav-links.active:hover{
+    }
+
+    .nav-links.active:hover {
         scale: calc(1.05);
     }
 
     .j-button {
         display: none;
     }
+
     /* Hero */
 
-#hero {
-    flex-direction: column;
-    padding: 140px 20px 40px;
+    #hero {
+        flex-direction: column;
+        padding: 140px 20px 40px;
+        align-items: center;
+    }
+
+    .left-hero,
+    .right-hero {
+        width: 100%;
+    }
+
+    .left-hero h1 {
+        font-size: 48px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .left-hero p {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .button {
+        justify-content: center;
+        padding: 30px 0;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .button a {
+        font-size: 18px;
+    }
+
+    .stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .stats h2 {
+        font-size: 40px;
+    }
+
+    .stats span {
+        font-size: 18px;
+    }
+
+    .right-hero img {
+        margin-top: 30px;
+    }
+
+    /* About */
+
+    .about {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .left-about,
+    .right-about {
+        width: 100%;
+    }
+
+    .right-about h2 {
+        font-size: 40px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .right-about h3,
+    .right-about p {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .about-boxes {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+
+    /* Programs */
+
+    .program h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .program-boxes {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    /* Before After */
+
+    .before-after h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .bagrid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .beforeafterimg {
+        height: auto;
+    }
+
+    .beforeafterimg img {
+        height: auto;
+    }
+
+    .between {
+        text-align: center;
+    }
+
+    .between p {
+        padding: 20px;
+    }
+
+    /* Membership */
+
+    .plan h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .plan-cards {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .card h3,
+    .card p,
+    .card span {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    /* BMI */
+
+    .calc h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    input,
+    .fform button {
+        width: 90%;
+    }
+
+    /* Testimonials */
+
+    .reviews h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .review-cards {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    /* Contact */
+
+    .section-title h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .contactgrid {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .contact-info {
+        padding-left: 30px;
+    }
+
+    .contact-form button {
+        width: 90%;
+    }
+
+    /* Footer */
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+
+/* //popup animation */
+.popup {
+    width: 400px;
+    background: #111;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .45);
+    position: relative;
+    text-align: center;
+    animation: popup .35s ease;
+    position: relative;
+}
+
+.popup h2 {
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+
+.popup p {
+    color: #cfcfcf;
+    line-height: 1.7;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+}
+
+.close:hover {
+    color: #ff3b3b;
+    transform: rotate(90deg);
+}
+
+.start-btn{
+    font-size: 18px;
+    font-weight: 600;
+    width: 200px;
+    margin-left: 80px;
+    cursor: pointer;
+    transition: .3s;
+    background: #0f0f0f;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #BFA46F;
+    border-radius: 80px;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(191, 164, 111, .18);
+}
+
+.start-btn:hover {
+    background: #BFA46F;
+    color: #111;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(191, 164, 111, .35);
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .65);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.left-hero,
-.right-hero {
-    width: 100%;
+.overlay {
+    display: none;
 }
 
-.left-hero h1 {
-    font-size: 48px;
-    text-align: center;
-    padding: 20px 0;
-}
+@keyframes popup {
 
-.left-hero p {
-    font-size: 18px;
-    text-align: center;
-    padding: 10px 0;
-}
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
 
-.button {
-    justify-content: center;
-    padding: 30px 0;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.button a {
-    font-size: 18px;
-}
-
-.stats {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    text-align: center;
-}
-
-.stats h2 {
-    font-size: 40px;
-}
-
-.stats span {
-    font-size: 18px;
-}
-
-.right-hero img {
-    margin-top: 30px;
-}
-
-/* About */
-
-.about {
-    flex-direction: column;
-    padding: 60px 20px;
-}
-
-.left-about,
-.right-about {
-    width: 100%;
-}
-
-.right-about h2 {
-    font-size: 40px;
-    padding-left: 0;
-    text-align: center;
-}
-
-.right-about h3,
-.right-about p {
-    padding-left: 0;
-    text-align: center;
-}
-
-.about-boxes {
-    grid-template-columns: 1fr;
-    padding-left: 0;
-}
-
-/* Programs */
-
-.program h1 {
-    font-size: 42px;
-    text-align: center;
-}
-
-.program-boxes {
-    grid-template-columns: 1fr;
-    padding: 30px 20px;
-}
-
-/* Before After */
-
-.before-after h1 {
-    font-size: 42px;
-    text-align: center;
-}
-
-.bagrid {
-    grid-template-columns: 1fr;
-    padding: 20px;
-}
-
-.beforeafterimg {
-    height: auto;
-}
-
-.beforeafterimg img {
-    height: auto;
-}
-
-.between {
-    text-align: center;
-}
-
-.between p {
-    padding: 20px;
-}
-
-/* Membership */
-
-.plan h1 {
-    font-size: 42px;
-    text-align: center;
-}
-
-.plan-cards {
-    grid-template-columns: 1fr;
-    padding: 20px;
-}
-
-.card h3,
-.card p,
-.card span {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-}
-
-/* BMI */
-
-.calc h1 {
-    font-size: 42px;
-    text-align: center;
-}
-
-input,
-.fform button {
-    width: 90%;
-}
-
-/* Testimonials */
-
-.reviews h1 {
-    font-size: 42px;
-    text-align: center;
-}
-
-.review-cards {
-    grid-template-columns: 1fr;
-    padding: 20px;
-}
-
-/* Contact */
-
-.section-title h1 {
-    font-size: 42px;
-    text-align: center;
-}
-
-.contactgrid {
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px 20px;
-}
-
-.contact-info,
-.contact-form {
-    width: 100%;
-    padding: 30px;
-}
-
-.contact-info {
-    padding-left: 30px;
-}
-
-.contact-form button {
-    width: 90%;
-}
-
-/* Footer */
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 
 }
-
-
-
-
-
