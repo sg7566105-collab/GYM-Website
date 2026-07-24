@@ -110,21 +110,27 @@ header {
 }
 
 .j-button {
-    color: white;
+    /* color: white; */
     text-decoration: none;
     font-size: 25px;
-    background-color: red;
+    /* background-color: rgb(75, 76, 73);
+     */
+     background: #111;
+     color: #fff;
     padding: 10px 15px;
+    border: 1px solid #BFA46F;
     border-radius: 80px;
     align-items: center;
+    box-shadow:0 6px 20px rgba(191,164,111,.18);
 
 
 
 }
 
 .j-button:hover {
-    color: black;
-    background-color: white;
+    
+    background: #efd5ac;
+    color: #111;
 }
 
 #hero {
@@ -147,6 +153,10 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 80px;
     text-transform: uppercase;
+    background :linear-gradient(80deg,rgb(248, 246, 246),rgb(241, 109, 43));
+    background-clip: text;
+    color: transparent;
+
 
 
 
@@ -154,7 +164,7 @@ header {
 }
 
 .left-hero p {
-    color: grey;
+    color: rgb(241, 226, 226);
     font-size: 20px;
     padding: 25px 30px 0px;
 
@@ -181,13 +191,17 @@ header {
 }
 
 .button :first-child {
-    background-color: red;
+   background: #111;
+     color: #fff;
+    /* padding: 10px 15px; */
+    border: 1px solid #BFA46F;
+    border-radius: 80px;
     align-items: center;
-
+    box-shadow:0 6px 20px rgba(191,164,111,.18);
 }
 
 .button :first-child:hover {
-    background-color: white;
+    background:#efd093;
     color: black;
 
 }
@@ -211,12 +225,14 @@ header {
 }
 
 .stats h2 {
-    color: red;
+    background: linear-gradient(90deg,rgb(228, 165, 165),rgb(235, 235, 98));
+    background-clip: text;
+    color: transparent;
     font-size: 50px;
 }
 
 .stats span {
-    color: grey;
+    color: rgb(239, 233, 233);
     font-size: 25px;
     text-transform: uppercase;
 }
@@ -294,13 +310,21 @@ header {
 }
 
 .about-box {
-    background-color: rgb(30, 30, 30);
+    background:rgba(255,255,255,0.08);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border:1px solid rbga(255,255,255,0.15);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35),inset 0 1px 1px rgba(237, 229, 229, 0.08);
     color: white;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
     height: 150px;
-    transition: 0.2s;
+    transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    -ms-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
 }
 
 .about-box h4 {
@@ -339,6 +363,9 @@ header {
 
 .program h1 {
     color: white;
+    background: linear-gradient(90deg,rgb(54, 54, 54),rgb(246, 242, 242),rgb(44, 54, 61));
+    background-clip: text;
+    color:transparent;
     text-transform: uppercase;
     font-size: 65px;
     font-weight: 800;
@@ -365,8 +392,8 @@ header {
 .program .box:hover {
     background-color: rgb(28, 28, 28);
     scale: calc(1.02);
-    border: 1px solid rgba(red);
-    box-shadow: 0 0 8px 2px red;
+    border: 1px solid rgba(rgb(213, 202, 45));
+    box-shadow: 0 0 8px 2px rgb(167, 167, 164);
     margin-top: 20px;
     text-align: center;
     height: 200px;
@@ -412,6 +439,7 @@ span,
 p,
 h1 {
     color: white;
+    
 }
 
 .before-after h3 {
@@ -427,6 +455,9 @@ h1 {
     font-size: 60px;
     font-weight: 800;
     margin-top: 20px;
+    background: linear-gradient(90deg,rgb(54, 54, 54),rgb(246, 242, 242),rgb(44, 54, 61));
+    background-clip: text;
+    color:transparent;
 
 }
 
@@ -473,6 +504,9 @@ h1 {
 
 .between h1 {
     color: red;
+    background: linear-gradient(90deg,rgb(234, 143, 143),rgb(200, 46, 46),rgb(208, 191, 183));
+    background-clip: text;
+    color:transparent;
 
 }
 
@@ -484,12 +518,15 @@ h1 {
 }
 
 .between span {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     margin-top: 10px;
-    background-color: red;
+    background-color: rgb(230, 218, 179);
     padding: 5px;
-    border: 10px solid red;
+    background: linear-gradient(90deg,rgb(180, 175, 32),rgb(244, 243, 243),rgb(236, 239, 242));
+    background-clip: text;
+    color:transparent;
+   
     border-radius: 25px;
 }
 
@@ -504,6 +541,9 @@ h1 {
 
 .plan h3 {
     color: red;
+    background: linear-gradient(90deg,rgb(220, 220, 38));
+    background-clip: text;
+    color:transparent;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -591,7 +631,13 @@ h1 {
     color: white;
     text-decoration: none;
     font-size: 25px;
-    background-color: red;
+    background: #111;
+     color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #BFA46F;
+    border-radius: 80px;
+    align-items: center;
+    box-shadow:0 6px 20px rgba(191,164,111,.18);
     padding: 20px;
     border-radius: 80px;
     align-items: center;
@@ -807,7 +853,9 @@ input {
 }
 
 .section-title h3 {
-    color: red;
+    background: linear-gradient(90deg, red, white);
+    background-clip: text;
+    color: transparent;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -820,6 +868,9 @@ input {
     font-size: 60px;
     font-weight: 800;
     margin-top: 20px;
+    background: linear-gradient(90deg,rgb(233, 227, 227),rgb(63, 114, 66),rgb(238, 240, 242));
+    background-clip: text;
+    color:transparent;
 
 
 }
@@ -849,6 +900,10 @@ input {
 
 .contact-info h3 {
     font-size: 30px;
+     background: linear-gradient(90deg, red, white);
+    background-clip: text;
+    color: transparent;
+    
     padding-bottom: 20px;
 }
 
@@ -884,7 +939,13 @@ input {
     width: 30%;
     height: 50px;
     border-radius: 30px;
-    background-color: red;
+    background: #111;
+     color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #BFA46F;
+    border-radius: 80px;
+    align-items: center;
+    box-shadow:0 6px 20px rgba(191,164,111,.18);
     color: white;
     font-weight: 3000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
