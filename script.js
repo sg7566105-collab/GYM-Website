@@ -38,7 +38,7 @@ fform.addEventListener("submit", function(e) {
         status = "Obese";
     }
 
-    result.innerHTML = `Your BMI is <strong>${bmi.toFixed(1)}</strong> (${status})`;
+    result.innerHTML = `Your BMI is <strong>${bmi.toFixed(2)}</strong> (${status})`;
     result.style.color = "white";
 
 });

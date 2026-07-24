@@ -967,7 +967,7 @@ footer h2 {
     .nav-links.active {
         display: flex;
         flex-direction: column;
-        width: 20%;
+        width: 30%;
         background-color: black;
 
     }
