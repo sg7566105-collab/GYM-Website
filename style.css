@@ -1360,7 +1360,7 @@ footer p{
     font-size: 18px;
     font-weight: 600;
     width: 200px;
-    margin-left: 55px;
+    margin-left: 30px;
     cursor: pointer;
     transition: .3s;
     background: #0f0f0f;
@@ -1371,6 +1371,7 @@ footer p{
     align-items: center;
     box-shadow: 0 6px 20px rgba(191, 164, 111, .18);
     -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
     
 }
 
@@ -1408,4 +1409,9 @@ footer p{
         transform: scale(1);
     }
 
+}
+@media (max-width:768px){
+    .start-btn{
+        margin-left: 5px;
+    }
 }

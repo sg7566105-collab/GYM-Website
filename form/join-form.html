@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITSUTRA-joinnow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" class="join-form">
+        <h2>JOIN FITSUTRA</h2>
+        <p class="subtitle">Fill in your details and start your transformation today.</p>
+        <!-- //personal information -->
+        <div class="name"><label for="name">Name: </label>
+            <input type="text" placeholder="Your Full Name">
+        </div>
+
+        <div class="age"><label for="age">Age</label>
+            <input type="number" placeholder="Your Age">
+        </div>
+
+        <div class="gender"><label for="gender">Gender</label>
+            <select name="" id="gender">
+                <option value="" selected disabled>Select Gender</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+        </div>
+
+        <div class="height-weight">
+            <div class="height">
+                <label for="">Height (cm)</label>
+                <input type=" number" placeholder="e.g. 175cm">
+            </div>
+
+            <div class="weight"> <label for="">Weight (kg)</label>
+                <input type="number" placeholder="e.g. 72kg">
+            </div>
+        </div>
+
+        <!-- Body Measurementsection -->
+        <div class="bodymeasure">
+            <div class="field"> <label for="">Waist</label>
+                <input type="number" placeholder="Waist">
+            </div>
+
+            <div class="field"> <label for="">Neck</label>
+                <input type="number" placeholder="Neck">
+            </div>
+        </div>
+
+        <div class="occupation">
+            <label for="Occupation">Occupation</label>
+            <select name="Occupation" id="Occupation" required>
+                <option value="" selected disabled>Select Occupation</option>
+                <option value="">Student</option>
+                <option value="">Business</option>
+                <option value="">Homemaker</option>
+                <option value="">Other</option>
+            </select>
+        </div>
+
+        <div class="fitness">
+            <label for="fitness-goal">Fitness Goal</label>
+            <select name="fitness-goal" id="fitness-goal" required>
+                <option value="" selected disabled>Select Goal</option>
+                <option value="">Fat Loss</option>
+                <option value="">Muscle Gain</option>
+                <option value="">Weight Gain</option>
+                <option value="">Strength</option>
+                <option value="">General Fitness</option>
+
+
+            </select>
+        </div>
+        <div class="phone">
+            <label for="ph-no">Phone Number</label>
+            <input type="number" placeholder="Enter your Phone Number" required>
+        </div>
+        <button>Start My Fitness Journey</button>
+
+
+    </form>
+
+</body>
+
+</html>

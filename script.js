@@ -86,9 +86,10 @@ boxes.forEach(box => {
         let h2 = document.createElement('h2'); 
         let p = document.createElement('p'); 
         
-        let startbutton = document.createElement('p'); 
+        let startbutton = document.createElement('a'); 
         startbutton.classList.add('start-btn'); 
         startbutton.textContent = 'Start Program'; 
+        startbutton.href="join-form.html";
         
         h2.textContent = programs[key].title; 
         p.textContent = programs[key].description; 

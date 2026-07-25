@@ -1,0 +1,145 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("images/FITSUTRA_gym_about_us.jpg") center/cover no-repeat fixed;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 20px;
+    padding: 20px 10px;
+    max-width: 750px;
+    margin: 40px auto;
+    background: rgba(20, 20, 20, .85);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(255, 0, 0, .15);
+}
+
+input,
+select {
+    width: 350px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+    height: 30px;
+    color: white;
+    background: #1d1d1d;
+    border: 1px solid #444;
+    transition: .3s;
+
+}
+
+input:focus,
+select:focus {
+    border-color: #c41e3a;
+    box-shadow: 0 0 15px rgba(196, 30, 58, .3);
+    outline: none;
+}
+
+input:hover,
+select:hover {
+    border-color: #777;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    background: linear-gradient(96deg, rgb(241, 237, 237), rgb(255, 67, 67), green);
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    text-align: center;
+    color: #bbb;
+    margin-bottom: 35px;
+}
+
+label {
+    color: #ddd;
+    margin: 5px 10px;
+    width: 180px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.height-weight input {
+    display: flex;
+    gap: 20px;
+
+}
+
+.bodymeasure {
+    display: flex;
+    padding-right: 170px;
+
+
+}
+
+.bodymeasure input {
+    width: 120px;
+}
+
+button {
+    width: 50%;
+    height: 55px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    
+    background: #0c0c0c;
+    border: 1px solid #777;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 150px;
+    font-weight: 700;
+    transition: .3s;
+    
+}
+
+button:hover {
+    background: rgb(27, 27, 27);
+    transform: translateY(-3px);
+    
+    box-shadow: 0 10px 25px #1b1a1a;
+}
+
+@media (max-width:768px) {
+
+    html,
+    body {
+        background: none;
+        background-color: black;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        min-height: 100vh;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 40px rgba(255, 0, 0, .15);
+
+    }
+
+    form {
+        width: 90%;
+
+
+    }
+
+    input,
+    select {
+        width: 80%;
+    }
+
+    button {
+        margin-left: 80px;
+    }
+
+}
