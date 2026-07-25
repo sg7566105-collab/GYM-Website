@@ -9,6 +9,20 @@ body {
     overflow-x: hidden;
 
 }
+body {
+    
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none; 
+    user-select: none;   
+}
+
+/* Disable image dragging */
+img {
+   
+    
+    pointer-events: none;
+}
 
 html {
     scroll-behavior: smooth;
@@ -327,10 +341,7 @@ header {
     border-radius: 15px;
     height: 150px;
     transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
+    
 }
 
 .about-box h4 {
@@ -388,11 +399,11 @@ header {
 .program .box {
     background-color: rgb(28, 28, 28);
     text-align: center;
-    height: 200px;
+    height: 220px;
     border-radius: 10px;
     transition: 0.5s;
     margin-top: 30px;
-
+    
 }
 
 .program .box:hover {
@@ -408,7 +419,7 @@ header {
 }
 
 .program-boxes .box h4 {
-    color: white;
+    color: rgb(242, 115, 115);
     font-size: 30px;
     padding: 10px;
 
@@ -416,9 +427,9 @@ header {
 }
 
 .program-boxes .box p {
-    color: rgb(173, 172, 172);
+    color: rgb(230, 226, 226);
     font-size: 20px;
-    padding: 20px 20px;
+    padding: 20px 20px 40px;
 
 
 }
@@ -434,18 +445,13 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 150px;
-
 }
 
 .before-after h3,
-span,
-p,
-h1 {
-    color: white;
-
+.before-after h1 {
+    text-align: center;
 }
 
 .before-after h3 {
@@ -456,87 +462,77 @@ h1 {
 }
 
 .before-after h1 {
-    color: white;
-    /* text-transform: uppercase; */
     font-size: 60px;
     font-weight: 800;
     margin-top: 20px;
-    background: linear-gradient(90deg, rgb(54, 54, 54), rgb(246, 242, 242), rgb(44, 54, 61));
+    background: linear-gradient(90deg, rgb(54,54,54), rgb(246,242,242), rgb(44,54,61));
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
 }
 
 .bagrid {
+    width: 100%;
+    max-width: 1400px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 30px 60px;
-
-
-
-}
-
-.bagrid img {
-    width: 50%;
-    /* height: 420px; */
-    padding: 20px;
+    grid-template-columns: 400px 1fr 400px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 60px;
+    box-sizing: border-box;
 }
 
 .beforeafterimg {
-    height: 420px;
     width: 400px;
+    height: 420px;
+    overflow: hidden;
     border-radius: 30px;
-
+    transition: .4s;
 }
 
 .beforeafterimg img {
     width: 100%;
-    height: 420px;
-    object-fit: fill;
+    height: 100%;
+    object-fit: cover;
     border-radius: 30px;
+    display: block;
 }
 
 .beforeafterimg:hover {
-    transform: translateY(-10px);
-    /* box-shadow: 0 0 30px rgba(236, 229, 229, 0.35); */
-
-
+    transform: scale(1.02);
 }
 
 .between {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    text-align: center;
 }
 
 .between h1 {
-    color: red;
-    background: linear-gradient(90deg, rgb(234, 143, 143), rgb(200, 46, 46), rgb(208, 191, 183));
+    font-size: 55px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, rgb(234,143,143), rgb(200,46,46), rgb(208,191,183));
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
 }
 
 .between p {
     font-size: 20px;
-    padding: 40px 40px;
-    color: rgb(189, 186, 186);
-
+    color: rgb(189,186,186);
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .between span {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
-    margin-top: 10px;
-    background-color: rgb(230, 218, 179);
-    padding: 5px;
-    background: linear-gradient(90deg, rgb(180, 175, 32), rgb(244, 243, 243), rgb(236, 239, 242));
+    background: linear-gradient(90deg, rgb(180,175,32), rgb(244,243,243), rgb(236,239,242));
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
-    border-radius: 25px;
 }
 
 .plan {
@@ -928,6 +924,7 @@ input {
 .contact-info p {
     font-size: 20px;
     line-height: 2;
+    color: white;
 }
 
 .contact-form {
@@ -995,6 +992,9 @@ footer h2 {
     color: #ff3b3b;
     margin-bottom: 15px;
 
+}
+footer p{
+    color: wheat;
 }
 
 .footer-links {
@@ -1166,30 +1166,67 @@ footer h2 {
 
     /* Before After */
 
-    .before-after h1 {
-        font-size: 42px;
-        text-align: center;
+     
+    .before-after{
+        margin-top:80px;
+        padding:0 15px;
     }
 
-    .bagrid {
-        grid-template-columns: 1fr;
-        padding: 20px;
+    .before-after h3{
+        font-size:16px;
+        text-align:center;
     }
 
-    .beforeafterimg {
-        height: auto;
+    .before-after h1{
+        font-size:32px;
+        text-align:center;
+        margin-top:10px;
     }
 
-    .beforeafterimg img {
-        height: auto;
+    .bagrid{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
+        width:100%;
+        padding:30px 0;
     }
 
-    .between {
-        text-align: center;
+    .beforeafterimg{
+        width:100%;
+        max-width:280px;
+        height:auto;
     }
 
-    .between p {
-        padding: 20px;
+    .beforeafterimg img{
+        width:100%;
+        height:auto;
+        aspect-ratio:4/5;
+        object-fit:cover;
+        border-radius:20px;
+    }
+
+    .between{
+        width:100%;
+        text-align:center;
+        padding:0 10px;
+    }
+
+    .between h1{
+        font-size:28px;
+        margin-bottom:12px;
+    }
+
+    .between p{
+        font-size:15px;
+        line-height:1.6;
+        padding:0;
+        margin-bottom:12px;
+    }
+
+    .between span{
+        font-size:16px;
     }
 
     /* Membership */
@@ -1290,14 +1327,17 @@ footer h2 {
 }
 
 .popup h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 18px;
+    background: linear-gradient(90deg,rgb(227, 224, 224),rgb(231, 57, 13));
+    background-clip: text;
+    color: transparent;
 }
 
 .popup p {
     color: #cfcfcf;
     line-height: 1.7;
-    font-size: 17px;
+    font-size: 14px;
     margin-bottom: 30px;
 }
 
@@ -1320,7 +1360,7 @@ footer h2 {
     font-size: 18px;
     font-weight: 600;
     width: 200px;
-    margin-left: 80px;
+    margin-left: 55px;
     cursor: pointer;
     transition: .3s;
     background: #0f0f0f;
@@ -1330,6 +1370,8 @@ footer h2 {
     border-radius: 80px;
     align-items: center;
     box-shadow: 0 6px 20px rgba(191, 164, 111, .18);
+    -webkit-tap-highlight-color: transparent;
+    
 }
 
 .start-btn:hover {
