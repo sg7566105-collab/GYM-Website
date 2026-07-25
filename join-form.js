@@ -28,8 +28,8 @@ document.getElementById("join-form").addEventListener("submit",function(e){
     Fitness:${fitness}
     plan:${plan}
     Phone-no:${phone}`;
-    console.log('https://wa.me/919670083550?text=${encodeURLComponent(message)}');
-    window.open('https://wa.me/919670083550?text=${encodeURLComponent(message)}',"_blank");
+    console.log('https://wa.me/919670083550?text=${encodeURIComponent(message)}');
+    window.open('https://wa.me/919670083550?text=${encodeURIComponent(message)}',"_blank");
 
 
     
