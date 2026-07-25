@@ -9,16 +9,16 @@
 </head>
 
 <body>
-    <form action="" class="join-form">
+    <form action="" id="join-form">
         <h2>JOIN FITSUTRA</h2>
         <p class="subtitle">Fill in your details and start your transformation today.</p>
         <!-- //personal information -->
         <div class="name"><label for="name">Name: </label>
-            <input type="text" placeholder="Your Full Name">
+            <input type="text" placeholder="Your Full Name" id="name">
         </div>
 
         <div class="age"><label for="age">Age</label>
-            <input type="number" placeholder="Your Age">
+            <input type="number" placeholder="Your Age" id="age">
         </div>
 
         <div class="gender"><label for="gender">Gender</label>
@@ -32,11 +32,11 @@
         <div class="height-weight">
             <div class="height">
                 <label for="">Height (cm)</label>
-                <input type=" number" placeholder="e.g. 175cm">
+                <input type=" number" placeholder="e.g. 175cm" id="height">
             </div>
 
-            <div class="weight"> <label for="">Weight (kg)</label>
-                <input type="number" placeholder="e.g. 72kg">
+            <div class="weight" > <label for="">Weight (kg)</label>
+                <input type="number" placeholder="e.g. 72kg" id="weight">
             </div>
         </div>
 
@@ -76,24 +76,25 @@
 
             </select>
         </div>
-        <dib class="plan">
+        <dib class="plann">
             <label for="plan">Membership Plan</label>
             <select name="plan" id="plan" >
                 <option value="" selected disabled>Select Membership Plan</option>
-                <option value="">Starter Plan -rupees 999</option>
-                <option value=""> Premium Plan- rupess 1999</option>
+                <option value="Basic">Starter Plan -&#8377; 499</option>
+                <option value="Pro"> Premium Plan-&#8377; 799</option>
 
-                <option value="">Elite Plan- rupees 2999</option>
+                <option value="Elite">Elite Plan- &#8377;999</option>
             </select>
         </dib>
         <div class="phone">
             <label for="ph-no" >Phone Number</label>
-            <input type="tel" placeholder="Enter your Phone Number" maxlength="10" required>
+            <input type="tel" placeholder="Enter your Phone Number" maxlength="10" required  id="phone">
         </div>
         <button type="submit">Start My Fitness Journey</button>
 
 
     </form>
+    <script src="join-form.js"></script>
 
 </body>
 
