@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITSUTRA-joinnow</title>
     <link rel="stylesheet" href="style-form.css">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+
 </head>
 
 <body>
@@ -14,52 +16,52 @@
         <p class="subtitle">Fill in your details and start your transformation today.</p>
         <!-- //personal information -->
         <div class="name"><label for="name">Name: </label>
-            <input type="text" placeholder="Your Full Name" id="name">
+            <input type="text" placeholder="Your Full Name" id="name" name="name">
         </div>
 
-        <div class="age"><label for="age">Age</label>
-            <input type="number" placeholder="Your Age" id="age">
+        <div class="age"><label for="age" >Age</label>
+            <input type="number" placeholder="Your Age" id="age" name="age">
         </div>
 
         <div class="gender"><label for="gender">Gender</label>
-            <select name="" id="gender">
+            <select id="gender" name="gender">
                 <option value="" selected disabled>Select Gender</option>
-                <option value="">Male</option>
-                <option value="">Female</option>
-                <option value="">Other</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
             </select>
         </div>
 
         <div class="height-weight">
             <div class="height">
                 <label for="">Height (cm)</label>
-                <input type=" number" placeholder="e.g. 175cm" id="height">
+                <input type=" number" placeholder="e.g. 175cm" id="height" name="height">
             </div>
 
-            <div class="weight" > <label for="">Weight (kg)</label>
-                <input type="number" placeholder="e.g. 72kg" id="weight">
+            <div class="weight"> <label for="">Weight (kg)</label>
+                <input type="number" placeholder="e.g. 72kg" id="weight"  name="weight">
             </div>
         </div>
 
         <!-- Body Measurementsection -->
         <div class="bodymeasure">
             <div class="field"> <label for="">Waist</label>
-                <input type="number" placeholder="Waist">
+                <input type="number" placeholder="Waist" id="waist" name="Waist">
             </div>
 
-            <div class="field"> <label for="">Neck</label>
-                <input type="number" placeholder="Neck">
+            <div class="field"> <label for="" >Neck</label>
+                <input type="number" placeholder="Neck" id="neck" name="Neck">
             </div>
         </div>
 
         <div class="occupation">
             <label for="Occupation">Occupation</label>
-            <select name="Occupation" id="Occupation" required>
+            <select name="occupation" id="Occupation" required>
                 <option value="" selected disabled>Select Occupation</option>
-                <option value="">Student</option>
-                <option value="">Business</option>
-                <option value="">Homemaker</option>
-                <option value="">Other</option>
+                <option value="Student">Student</option>
+                <option value="Business">Business</option>
+                <option value="Homemaker">Homemaker</option>
+                <option value="Other">Other</option>
             </select>
         </div>
 
@@ -67,34 +69,35 @@
             <label for="fitness-goal">Fitness Goal</label>
             <select name="fitness-goal" id="fitness-goal" required>
                 <option value="" selected disabled>Select Goal</option>
-                <option value="">Fat Loss</option>
-                <option value="">Muscle Gain</option>
-                <option value="">Weight Gain</option>
-                <option value="">Strength</option>
-                <option value="">Cardio Fitness</option>
-                <option value="">General Fitness</option>
+                <option value="Fat Loss">Fat Loss</option>
+                <option value="Muscle Gain">Muscle Gain</option>
+                <option value="Weight Gain">Weight Gain</option>
+                <option value="Strength">Strength</option>
+                <option value="Cardio Fitness">Cardio Fitness</option>
+                <option value="General Fitness">General Fitness</option>
 
 
             </select>
         </div>
-        <dib class="plann">
+        <div class="plann">
             <label for="plan">Membership Plan</label>
-            <select name="plan" id="plan" >
+            <select name="plan" id="plan">
                 <option value="" selected disabled>Select Membership Plan</option>
                 <option value="Basic">Starter Plan -&#8377; 499</option>
                 <option value="Pro"> Premium Plan-&#8377; 799</option>
 
                 <option value="Elite">Elite Plan- &#8377;999</option>
             </select>
-        </dib>
+        </div>
         <div class="phone">
-            <label for="ph-no" >Phone Number</label>
-            <input type="tel" placeholder="Enter your Phone Number" maxlength="10" required  id="phone">
+            <label for="ph-no">Phone Number</label>
+            <input type="tel" placeholder="Enter your Phone Number" maxlength="10" required id="phone" name="phone">
         </div>
         <button type="submit">Start My Fitness Journey</button>
 
 
     </form>
+    <script src="https://jsdelivr.net"></script>
     <script src="join-form.js"></script>
 
 </body>

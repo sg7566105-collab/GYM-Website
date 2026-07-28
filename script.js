@@ -111,3 +111,20 @@ overlay.addEventListener('click', function (e) {
     }
 });
 
+//Contact Form Responsive
+
+
+
+
+document.querySelector(".contact-formm").addEventListener("submit", function(){
+    const cname=document.querySelectorById("cname").value;
+    const cemail= document.querySelectorById("cemail").value;
+    const cmessage= document.querySelectorById("cmessage").value;
+
+    const emessage=`FITSUtra Email Contact
+    Name: ${cname}
+    Email: ${cemail}
+    Message: ${cmessage}`;
+
+ window.open(   `https://wa.me/919670083550?text=${encodeURIComponent(cmessage)}`,"_blank");
+})
