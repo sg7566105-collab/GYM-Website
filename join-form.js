@@ -42,7 +42,7 @@ Phone: ${memberData.phone}`;
 
     try {
        
-        const response = await fetch("http://localhost:5500/api/join", {
+        const response = await fetch("https://gym-website-guk4.onrender.com/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
