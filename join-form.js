@@ -42,7 +42,7 @@ Phone: ${memberData.phone}`;
 
     try {
        
-        const response = await fetch("https://onrender.com", {
+        const response = await fetch("https://gym-website-guk4.onrender.com/api/join", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
