@@ -13,10 +13,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname)); 
 // MongoDB Connection
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => console.log("✅ MongoDB Connected Successfully"))
-  .catch((err) => console.error("❌ MongoDB Error:", err));
+// ✨ इसकी जगह यह लिखो:
+mongoose.connect(process.env.MONGO_URI, {
+  serverSelectionTimeoutMS: 5000, // अगर 5 सेकंड में कनेक्ट न हो तो तुरंत दोबारा ट्राई करे
+  bufferCommands: false,          // बफ़रिंग को पूरी तरह बंद कर दे
+})
+
 
 // Home Route
 app.get("/", (req, res) => {
