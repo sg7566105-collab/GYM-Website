@@ -8,24 +8,26 @@ if (selectedPlan) {
     planSelect.value = selectedPlan;
 }
 
-document.getElementById("join-form").addEventListener("submit", async function (e) {
+document.getElementById("join-form").addEventListener("submit", function (e) {
     console.log("Submit Clicked");
-    e.preventDefault()
+    e.preventDefault(); // पेज को रीलोड होने से रोकता है
 
+    // फ़ॉर्म से सारा डेटा इकट्ठा करें
     const memberData = {
         name: document.getElementById("name").value,
-        age: Number(document.getElementById("age").value), 
+        age: document.getElementById("age").value, 
         gender: document.getElementById("gender").value,
-        height: Number(document.getElementById("height").value),
-        weight: Number(document.getElementById("weight").value),
-        waist: Number(document.getElementById("waist").value),
-        neck: Number(document.getElementById("neck").value),
+        height: document.getElementById("height").value,
+        weight: document.getElementById("weight").value,
+        waist: document.getElementById("waist").value,
+        neck: document.getElementById("neck").value,
         occupation: document.getElementById("Occupation").value,
         fitnessGoal: document.getElementById("fitness-goal").value,
         plan: document.getElementById("plan").value,
         phone: document.getElementById("phone").value
     };
 
+    // व्हाट्सएप के लिए मैसेज तैयार करें
     const message = `💪 NEW FITSUTRA REGISTRATION
 
 Name: ${memberData.name}
@@ -40,45 +42,9 @@ Fitness Goal: ${memberData.fitnessGoal}
 Plan: ${memberData.plan}
 Phone: ${memberData.phone}`;
 
-    try {
-       
-        const response = await fetch("https://gym-website-guk4.onrender.com/api/join", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(memberData)
-        });
+    // 🚀 सीधा व्हाट्सएप खोलने का कोड (बिना किसी पॉप-अप या एरर के)
+    window.open(   `https://wa.me/919670083550?text=${encodeURIComponent(message)}`,"_blank");
 
-        console.log("Status:", response.status);
-        const result = await response.json(); 
-        console.log("Response:", result);
-
-        if (response.ok && result.success) {
-           
-            Swal.fire({
-                title: 'Success!',
-                text: 'Registration Successful!',
-                icon: 'success',
-                confirmButtonText: 'OK',
-                confirmButtonColor: 'grey' 
-            });
-
-
-           
-            window.open(
-                `https://wa.me/919670083550?text=${encodeURIComponent(message)}`,
-                "_blank"
-            );
-
-           
-            document.getElementById("join-form").reset();
-        } else {
-            alert("Server Error: " + (result.message || "Something went wrong"));
-        }
-
-    } catch (error) {
-        console.error("Fetch Error:", error);
-        alert("Failed to connect to server. Make sure backend is running!");
-    }
+    // फ़ॉर्म को खाली करें
+    document.getElementById("join-form").reset();
 });
